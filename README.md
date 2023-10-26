@@ -5,8 +5,11 @@ Fitbit requires an OAuth handshake. I have created a boilerplate React app to te
 Here is the process it follows:
 
 -> Request for authentication is made from the Dashboard component to Fitbit
+
 -> Fitbit returns back a payload "code" to OAuthCallback component
+
 -> This payload is then sent back to Fitbit via netlify serverless functions.
+
 -> Fitbit verifies this payload, and sends a token back to the React app (i.e. client)
 
 The token returned back from Fitbit can then be used to make API calls on behalf of the user.
